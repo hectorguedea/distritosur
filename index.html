@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distrito Sur - Corporativo | Ciudad de México</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Estilo personalizado para el navbar */
+        .navbar {
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        .navbar .nav-link {
+            color: white;
+        }
+        .navbar .nav-link:hover {
+            color: #ddd;
+        }
+
+        .hero {
+            background: url('assets/hero.jpg') no-repeat center center;
+            background-size: cover;
+            height: 1126px;
+            position: relative;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .hero-content {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar flotante con menú responsivo -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Menú izquierda en escritorio, oculto en móvil -->
+            <div class="navbar-collapse collapse d-none d-lg-flex">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="#">Acerca de</a>
+                </div>
+            </div>
+            <!-- Logo en el medio en escritorio, izquierda en móvil -->
+            <a class="navbar-brand mx-auto d-lg-block" href="#">
+                <img src="assets/distrito-sur-logo.svg" alt="Logo" style="height: 50px;">
+            </a>
+            <!-- Menú derecha en escritorio, oculto en móvil -->
+            <div class="navbar-collapse collapse d-none d-lg-flex">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#">Soporte</a>
+                </div>
+            </div>
+            <!-- Botón de menú hamburguesa para móvil -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú colapsable para móvil -->
+         
+            <div class="collapse d-lg-none" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="#">Acerca de</a>
+                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#">Soporte</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bienvenido a Distrito Sur</h1>
+                <p>Tu mejor opción en almacenamiento en la nube. Descubre nuestras soluciones diseñadas para ti.</p>
+                <a href="#" class="btn btn-primary me-2">Conoce más</a>
+                <a href="#" class="btn btn-secondary">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>
